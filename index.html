@@ -4,20 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Self-introduction</title>
-    <link rel="stylesheet" href="/self_introduction/index.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li>
-            <a href="#">프로필</a>
+            <a id="profile_menu" href="#profile">프로필</a>
           </li>
           <li>
-            <a href="#">상세 내용</a>
+            <a id="detail-cont" href="#detail">상세 내용</a>
           </li>
         </ul>
       </nav>
     </header>
+    <main>
+      <article id="profile">
+        <p id="name">엘리스 토끼</p>
+        <div>
+          <img id="profile_img" src="/assets/gromit.jpg" alt="profile_img" />
+        </div>
+      </article>
+      <article id="detail">
+        <div class="top">
+          <section id="sec1">
+            <h2>인적사항</h2>
+            <p><strong>생년월일:</strong> 1997. 01. 01 | A형</p>
+            <p><strong>주소:</strong> 대전광역시 유성구 문지로 193</p>
+            <p><strong>연락처:</strong> contact@elice.io | 070.1633.2017</p>
+          </section>
+          <section id="sec2">
+            <h2>학력사항</h2>
+            <ul>
+              <li>2009.03 ~ 2012.02: 한국중학교 | 충북</li>
+              <li>2012.03 ~ 2015.02: 한국고등학교 | 경기 | 자연계</li>
+              <li>2015.03 ~ 2021.02: 한국대학교 | 서울 | 컴퓨터공학과</li>
+            </ul>
+          </section>
+        </div>
+        <div class="bottom">
+          <section id="sec3">
+            <h2>경력사항</h2>
+            <ol>
+              <li>한국 정보 올림피아드 대상</li>
+              <li>대학생 봉사 동아리 회장</li>
+              <li>엘리스 SW 트랙 수료</li>
+            </ol>
+          </section>
+          <section id="sec4">
+            <h2>보유 스킬</h2>
+            <ul>
+              <li>
+                <a href="#">HTML</a>
+              </li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
   </body>
 </html>

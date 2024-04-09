@@ -9,7 +9,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  background-color: #808080;
+  background-color: gray;
 }
 nav ul li {
   padding: 15px;
@@ -18,4 +18,10 @@ nav ul li a {
   display: block;
   color: white;
   text-decoration-line: none;
+}
+#profile_menu:hover,
+#detail-cont:hover {
+  background-color: darkgray;
+  letter-spacing: 4px;
+  transition: all 1s;
 }
