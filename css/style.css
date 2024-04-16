@@ -1,5 +1,8 @@
 @import "header.css";
 @import "main.css";
+:root {
+  --border-color: #d3d7d9;
+}
 * {
   margin: 0;
 }
