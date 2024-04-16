@@ -1,0 +1,52 @@
+main {
+  width: 100%;
+  min-height: 1500px;
+}
+
+#Home {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 500px;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.Home {
+  width: 50%;
+}
+.Home img {
+  width: 100%;
+}
+.Home:nth-child(2) {
+  padding-left: 50px;
+  text-align: start;
+}
+#korName {
+  font-size: 100px;
+  font-weight: bold;
+}
+#enName {
+  font-size: 40px;
+  line-height: 60px;
+}
+#birth,
+#location,
+#email {
+  font-size: 20px;
+  line-height: 40px;
+}
+.birth,
+.location,
+.email {
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+#birth-img,
+#location-img,
+#email-img {
+  width: 25px;
+  margin-right: 5px;
+}
