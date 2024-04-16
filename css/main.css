@@ -7,17 +7,32 @@ main {
   box-sizing: border-box;
   width: 100%;
   min-height: 500px;
-  padding: 30px 30px 30px 30px;
+  padding: 40px 30px 40px 30px;
   display: flex;
   justify-content: center;
   align-items: end;
+  border-bottom: 1px var(--border-color) solid;
 }
 
 .Home {
   width: 50%;
 }
+.Home:nth-child(1) {
+  height: 437px;
+  border-radius: 10px;
+  overflow: hidden;
+}
 .Home img {
   width: 100%;
+}
+#profile-img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+#profile-img:hover {
+  transform: scale(1.2);
+  transition: all 2s;
 }
 .Home:nth-child(2) {
   padding-left: 50px;
@@ -49,4 +64,36 @@ main {
 #email-img {
   width: 25px;
   margin-right: 5px;
+}
+
+#About {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 400px;
+  padding: 30px 30px 30px 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+.education {
+  font-size: 35px;
+  line-height: 50px;
+}
+.education.ul {
+  width: 100%;
+  height: 110px;
+  margin-top: 20px;
+}
+.license {
+  font-size: 35px;
+  line-height: 50px;
+  margin-top: 20px;
+}
+.license.ul {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+.education.ul li,
+.license.ul li {
+  font-size: 20px;
+  line-height: 35px;
 }
