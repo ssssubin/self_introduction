@@ -114,3 +114,87 @@ main {
   font-size: 20px;
   line-height: 35px;
 }
+#skills {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 400px;
+  padding: 30px 30px 30px 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#skills h2 {
+  font-size: 35px;
+  line-height: 50px;
+}
+.skills-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 155px;
+  margin-top: 25px;
+  row-gap: 15px;
+}
+#htmlImg,
+#cssImg,
+#jsImg,
+#javaImg {
+  width: 70px;
+  height: 70px;
+}
+.grid-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* div 겹치기 위해 position:relative, position:absolute 사용*/
+.grid-item__html,
+.grid-item__css,
+.grid-item__js,
+.grid-item__java {
+  width: 350px;
+  height: 35px;
+  border-radius: 20px;
+  border-right: 1px solid var(--border-color);
+  background-color: antiquewhite;
+  position: relative;
+  left: 15px;
+}
+.grid-item__html > div {
+  box-sizing: border-box;
+  width: 220px;
+  min-height: 35px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  position: absolute;
+  background-color: var(--main-color);
+}
+.grid-item__css > div {
+  box-sizing: border-box;
+  width: 175px;
+  height: 35px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  position: absolute;
+  background-color: var(--main-color);
+}
+.grid-item__js > div {
+  box-sizing: border-box;
+  width: 105px;
+  height: 35px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  position: absolute;
+  background-color: var(--main-color);
+}
+.grid-item__java > div {
+  box-sizing: border-box;
+  width: 105px;
+  height: 35px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  position: absolute;
+  background-color: var(--main-color);
+}
