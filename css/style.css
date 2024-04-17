@@ -2,6 +2,7 @@
 @import "main.css";
 :root {
   --border-color: #d3d7d9;
+  --main-color: #57d3f7;
 }
 * {
   margin: 0;
