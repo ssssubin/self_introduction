@@ -2,7 +2,37 @@ main {
   width: 100%;
   min-height: 1500px;
 }
-
+#produce {
+  width: 100%;
+  min-height: 100vh;
+  /* 텍스트 세로 방향으로 정렬하기 위함 */
+  display: table;
+}
+.produce {
+  display: none;
+}
+.active {
+  box-sizing: border-box;
+  /* 텍스트 세로 가운데 정렬하기 위해*/
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  animation: produceAnimation 5s infinite;
+  line-height: 80px;
+}
+/* 텍스트 아래에서 위로 올라오는 fade-in 효과 */
+@keyframes produceAnimation {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
 #Home {
   box-sizing: border-box;
   width: 100%;
